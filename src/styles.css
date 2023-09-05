@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  padding: 5vh 15vmax;
+  font-family: "Quicksand", sans-serif !important;
+  background-color: #ddd;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 100%;
+  padding: 20px 0;
+  max-height: 90vh;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: inset 2px 2px 15px #999999;
+  border-radius: 6px;
+}
+
+.upperArea {
+  width: 100%;
+  padding: 10px 5vmax 10px 5vmax;
+}
+.upperArea h1 {
+  color: rgb(153, 0, 33);
+  font-size: 2.2rem;
+  text-decoration: underline;
+}
+.upperArea h3 {
+  color: #333;
+  font-weight: 500;
+}
+
+.upperArea .advice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* color: rgb(0, 105, 65); */
+  margin: 20px 0px 0px 0px !important;
+}
+
+.upperArea button {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  margin-top: 15px;
+  color: #fff;
+  border-radius: 4px;
+  letter-spacing: 0.2px;
+  background-color: rgb(153, 0, 33);
+  border: 2px solid rgb(153, 0, 33);
+  transition: 0.4s;
+}
+
+.upperArea button:hover {
+  color: rgb(153, 0, 33);
+  background-color: transparent;
+  border: 2px solid rgb(153, 0, 33);
+}
+
+.todoList {
+  width: 100%;
+  text-align: center;
+  max-height: 40vmin;
+  /* background-color: lightcoral; */
+  overflow: auto;
+  padding: 10px 5vmax;
+  display: flex;
+  justify-content: center;
+}
+
+.todoList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.todoList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.todoList::-webkit-scrollbar-thumb {
+  background-color: rgb(153, 0, 33);
+  border-radius: 12px;
+}
+
+.todoList ul {
+  list-style: none;
+}
+
+.todoList ul li {
+  width: 60vmin;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 4px 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.hide {
+  display: none !important;
+}
